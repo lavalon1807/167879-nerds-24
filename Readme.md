@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Егор Лимачёв](https://up.htmlacademy.ru/htmlcss/24/user/167879).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Рубец](https://htmlacademy.ru/profile/amator).
 
 ---
 
