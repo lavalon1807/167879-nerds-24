@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a href="index.html" class="main-logo-header">
+  				<img src="img/index-logo.svg" width="160" height="65" alt="Логотип &laquoНёрдс&raquo">
+  			</a>
+  			<ul class="site-navigation">
+  				<li><a href="studio.html">Студия</a></li>
+  				<li><a href="clients.html">Клиенты</a></li>
+  				<li><a href="catalog.html">Магазин</a></li>
+  				<li><a href="contacts.html">Контакты</a></li>
+  			</ul>
+  		</nav>
+  		<div class="user-navigation">
+  			<ul>
+  				<li><a class="basket" href="#">Корзина</a></li>
+  			</ul>
+  		</div>
+    </header>
+
+      <main class="contaienr">
+
+      <div class="header-tittle">
+        <h1>Магазин готовых шаблонов</h1>
+      </div>    
+
+    <section class="filters">
+      <form class="form-filter">
+        <fieldset>
+          <legend>Стоимость:</legend>
+          
+        </fieldset>
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li class="filter-option">Адаптивная</li>
+            <li class="filter-option">Фиксированная</li>
+            <li class="filter-option">Резиновая</li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li class="filter-option">Слайдер</li>
+            <li class="filter-option">Блок преимуществ</li>
+            <li class="filter-option">Новости</li>
+            <li class="filter-option">Галерея</li>
+            <li class="filter-option">Корзина</li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="button filter-button">Показать</button>
+      </form>
+    </section>
+
+    <section class="sorting">
+      <legend>Сортировать:</legend>
+      <ul>
+        <li class="sort-price">По цене</li>
+        <li class="sort-type">По типу</li>
+        <li class="sort-name">По названию</li>
+      </ul>
+    </section>
+      
+    <section class="catalog">
+      <ul class="catalog-list">
+
+        <li class="catalog-item">
+          <div class="catalog-header">
+            
+          </div>
+          <div class="sedona-info">
+            <h3>Sedona</h3>
+            <p>Информационный сайт для туристов</p>
+            <button type="text" class="button">9 900 руб.</button>
+          </div>
+          <img src="img/sedona.jpg" width="360" height="575" alt="Седона">
+        </li>
+
+        <li class="catalog-item">
+          <div class="catalog-header">
+            
+          </div>
+          <div class="sedona-info">
+            <h3>Pink app</h3>
+            <p>Продуктовый лендинг приложения для iOSи Android</p>
+            <button type="text" class="button">9 900 руб.</button>
+          </div>
+          <img src="img/pinkapp.jpg" width="360" height="575" alt="Пинк апп">
+        </li>
+
+        <li class="catalog-item">  
+          <div class="catalog-header">
+            
+          </div>      
+          <div class="sedona-info">
+            <h3>Barbershop</h3>
+            <p>Сайт салона красоты. Для мужчин, да.</p>
+            <button type="text" class="button">9 900 руб.</button>
+          </div>
+          <img src="img/barbershop.jpg" width="360" height="575" alt="Барбершоп">
+        </li>
+
+        <li class="catalog-item">  
+          <div class="catalog-header">
+            
+          </div>       
+          <div class="sedona-info">
+            <h3>Mishka</h3>
+            <p>Интернет-магазин вязанных игрушек</p>
+            <button type="text" class="button">9 900 руб.</button>
+          </div>
+          <img src="img/mishka.jpg" width="360" height="575" alt="Мишка">
+        </li>
+
+        <li class="catalog-item">
+          <div class="catalog-header">
+            
+          </div> 
+          <div class="sedona-info">
+            <h3>A plus</h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <button type="text" class="button">9 900 руб.</button>
+          </div>
+          <img src="img/aplus.jpg" width="360" height="575" alt="А плюс">
+        </li>
+
+        <li class="catalog-item">
+          <div class="catalog-header">
+            
+          </div> 
+          <div class="sedona-info">
+            <h3>Кваст</h3>
+            <p>Прямо-сайт производителя крафтового кваса</p>
+            <button type="text" class="button">9 900 руб.</button>
+          </div>
+          <img src="img/kvast.jpg" width="360" height="575" alt="Кваст">
+        </li>
+      </ul>
+      <ul class="list-pagination">
+        <li class="item-pagination current-pagination">1</li>
+        <li class="item-pagination">2</li>
+        <li class="item-pagination">3</li>
+        <li class="item-pagination next-pagination">Следующая</li>
+      </ul>
+    </section>
+    </main>
+
+    <footer class="main-footer">
+
+      <section class="map">
+        <img src="img/map.jpg" width="1440" height="415" alt="Как до нас добраться">
+        <p><img src="img/map-marker.png" width="160" height="190"></p>
+        <div class="modal-map">
+          <h3>Nёrds design studio</h3>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7(812)275-75-75</p>
+          <a class="button" href="#">Напишите нам</a>
+        </div>
+      </section>
+
+      <section class="footer-friends">
+        <div class="footer-social">
+          <ul>
+            <li>
+              <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a>
+            </li>
+            <li>
+              <a class="social-button" href="#"><span class="visually-hidden">Фейсбук
+              </span></a>
+            </li>
+            <li>
+              <a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-greeting">
+          <b>Давайте дружить, это выгодно!</b>
+          <p class="footer-discount"> Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+
+    </footer>
+  </body>
+</html>
