@@ -172,14 +172,17 @@
 		<section class="modal modal-rightus">
 			<h2>Напишите нам</h2>
 			<form class="login-form" action="http://echo.htmlacademy.ru" method="post">
-				<p>
-					<input class="modal-name" type="text" name="login" placeholder="Имя Фамилия">Ваше имя:
+				<p>	
+					<input class="modal-name" type="text" name="login" placeholder="Имя Фамилия" id="name">
+					<label for="name">Ваше имя:</label>
 				</p>
 				<p>
-					<input class="modal-mail" type="text" name="email" placeholder="email@example.com">Ваш e-mail:
+					<input class="modal-mail" type="text" name="email" placeholder="email@example.com" id="e-mail">
+					<label for="e-mail">Ваш e-mail:</label>
 				</p>
 				<p>
-					<input class="modal-text" type="text" name="coment" placeholder="В свободной форме">Текст письма:
+					<input class="modal-text" type="text" name="coment" placeholder="В свободной форме" id="text">
+					<label for="text">Текст письма:</label>
 				</p>
 				<button class="button" type="submit">Отправить</button>
 			</form>
