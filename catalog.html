@@ -3,8 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+		<link rel="css/normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body class="inner-page">
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a href="index.html" class="main-logo-header">
@@ -38,15 +41,15 @@
 						<legend>Сетка:</legend>
 						<ul>
 							<li class="filter-option">
-								<input type="radio" name="adaptive" id="input-adapt" checked>
+								<input class="filter-input" type="radio" name="adaptive" id="input-adapt" checked>
 								<label for="input-adapt">Адаптивная</label>
 							</li>
 							<li class="filter-option">
-								<input type="radio" name="fix" id="input-fix">
+								<input class="filter-input" type="radio" name="fix" id="input-fix">
 								<label for="input-fix">Фиксированная</label>
 							</li>
 							<li class="filter-option">
-								<input type="radio" name="sketch" id="input-sketch">
+								<input class="filter-input" type="radio" name="sketch" id="input-sketch">
 								<label for="input-sketch">Резиновая</label>
 							</li>
 						</ul>
@@ -55,23 +58,23 @@
 						<legend>Особенности:</legend>
 						<ul>
 							<li class="filter-option">
-								<input type="checkbox" name="Slide" id="input-slide" checked>
+								<input class="filter-input" type="checkbox" name="Slide" id="input-slide" checked>
 								<label for="input-slide">Слайдер</label>
 							</li>
 							<li class="filter-option">
-								<input type="checkbox" name="block" id="input-block">
+								<input class="filter-input" type="checkbox" name="block" id="input-block">
 								<label for="input-block">Блок преимуществ</label>
 							</li>
 							<li class="filter-option">
-								<input type="checkbox" name="news" id="input-news" checked>
+								<input class="filter-input" type="checkbox" name="news" id="input-news" checked>
 								<label for="input-news">Новости</label>
 							</li>
 							<li class="filter-option">
-								<input type="checkbox" name="gallery" id="input-gallery">
+								<input class="filter-input" type="checkbox" name="gallery" id="input-gallery">
 								<label for="input-gallery">Галерея</label>
 							</li>
 							<li class="filter-option">
-								<input type="checkbox" name="buk" id="input-buk">
+								<input class="filter-input" type="checkbox" name="buk" id="input-buk">
 								<label for="input-buk">Корзина</label>
 							</li>
 						</ul>

@@ -1,0 +1,277 @@
+body {
+	margin: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #283136;
+
+	background-color: #ffffff;
+}
+
+.inner-page {
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+a{
+	text-decoration: none;
+}
+/*---кнопки---*/
+.button {
+	font-size: 16px;
+	line-height: 18px;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #fb565a;
+	border: none;
+}
+
+.button:hover {
+	background-color: #e74246;
+}
+
+.button:active {
+	background-color: #d7373b;
+}
+.order-item:nth-child(2) .button-order {
+	background-color: #00ca74;
+}
+
+.order-item:nth-child(2):hover .button-order {
+	background-color: #00bc6c;
+}
+
+.order-item:nth-child(2):active .button-order {
+	background-color: #00aa62;
+}
+
+.order-item:last-child .button-order {
+	background-color: #efc84a;
+}
+
+.order-item:last-child:hover .button-order {
+	background-color: #eab534;
+}
+
+.order-item:last-child:active .button-order {
+	background-color: #e5a722;
+}
+/*---фон текста---*/
+.main-header {
+	line-height: 30px;
+	font-weight: 500;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+	color: #fb565a;
+}
+.site-navigation a:focus,
+.user-navigation a:focus {
+	color: #cbcbcb;
+}
+
+.header-info {
+	background-color: #eeeeee;
+	display: none;
+}
+
+.header-tittle {
+	background-color: #eeeeee;
+}
+
+.orders-catalog {
+	list-style: none;
+}
+
+.order-item h3 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.order-item p {
+	line-height: 24px;
+	color: #62676b;
+}
+
+.base-info {
+	list-style: none;
+}
+
+.description h2 {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.description .hyphen {
+	color: red;
+}
+
+.description .point {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.description .percent {
+	font-size: 25px;
+}
+
+.base-list {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.filters fieldset {
+	border: none;
+}
+
+.filters legend {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.filters ul {
+	list-style: none;
+	line-height: 20px;
+}
+
+.filter-input + label {
+	color: #8d9193;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+	color: #4f4f4f;
+}
+
+.filter .filter-option {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.filter-button {
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.filter-button:hover {
+	color: #000000;
+	background-color: #dfdfdf;
+}
+
+.filter-button:focus {
+	color: #adadad;
+	background-color: #d5d5d5;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog h3 {
+	text-transform: uppercase;
+	color: #000000;
+
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.catalog p {
+	font-size: 16px;
+	line-height: 18px;
+
+	color: #a0a0a0;
+}
+/*---footer---*/
+.main-footer h3 {
+	text-transform: uppercase;
+}
+
+.main-footer .modal-adres {
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+}
+
+.main-footer .social {
+	list-style: none;
+}
+
+.social-button {
+	color: #ffffff;
+	background-color: #cbcbcb;
+}
+
+.social-button:hover {
+	background-color: #e74246;
+}
+
+.social-button:focus {
+	color: #e37376;
+	background-color: #d7373b;
+}
+
+.footer-greeting b {
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.footer-discount {
+	color: #444444;
+}
+
+.modal {
+	color: #000000;
+
+	background-color: #ffffff;
+
+}
+
+.modal h2 {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.modal-text {
+	line-height: 18px;
+
+	color: #444444;
+}
+
+.login-form input::placeholder,
+.login-form textarea::placeholder {
+	color: #444444;
+}
+
+.login-form input:hover,
+.login-form textarea:hover {
+	border-color: #c7cacc;
+}
+
+.login-form input:focus,
+.login-form textarea:focus {
+	border-color: #555555;
+}
