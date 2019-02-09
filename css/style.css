@@ -1,34 +1,29 @@
 body {
 	margin: 0;
-
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 26px;
 	font-weight: 400;
 	color: #283136;
-
 	background-color: #ffffff;
 }
 
 .inner-page {
 	color: #000000;
-
 	background-color: #ffffff;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 /*---кнопки---*/
 .button {
 	font-size: 16px;
 	line-height: 18px;
-
 	text-align: center;
 	color: #ffffff;
 	vertical-align: middle;
 	text-transform: uppercase;
-
 	background-color: #fb565a;
 	border: none;
 }
@@ -40,27 +35,27 @@ a{
 .button:active {
 	background-color: #d7373b;
 }
-.order-item:nth-child(2) .button-order {
+.button-application {
 	background-color: #00ca74;
 }
 
-.order-item:nth-child(2):hover .button-order {
+.button-application:hover {
 	background-color: #00bc6c;
 }
 
-.order-item:nth-child(2):active .button-order {
+.button-application:active {
 	background-color: #00aa62;
 }
 
-.order-item:last-child .button-order {
+.button-present {
 	background-color: #efc84a;
 }
 
-.order-item:last-child:hover .button-order {
+.button-present:hover {
 	background-color: #eab534;
 }
 
-.order-item:last-child:active .button-order {
+.button-present:active {
 	background-color: #e5a722;
 }
 /*---фон текста---*/
@@ -69,7 +64,6 @@ a{
 	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
-
 	background-color: #eeeeee;
 }
 
@@ -194,7 +188,6 @@ a{
 .catalog h3 {
 	text-transform: uppercase;
 	color: #000000;
-
 	font-size: 18px;
 	line-height: 30px;
 }
@@ -202,7 +195,6 @@ a{
 .catalog p {
 	font-size: 16px;
 	line-height: 18px;
-
 	color: #a0a0a0;
 }
 /*---footer---*/
@@ -245,9 +237,7 @@ a{
 
 .modal {
 	color: #000000;
-
 	background-color: #ffffff;
-
 }
 
 .modal h2 {
@@ -257,7 +247,6 @@ a{
 
 .modal-text {
 	line-height: 18px;
-
 	color: #444444;
 }
 
