@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-family: "Roboto", Arial, sans-serif;
+	font-family: "Roboto", "Arial", serif;
 	font-size: 16px;
 	line-height: 26px;
 	font-weight: 400;
@@ -59,12 +59,49 @@ a {
 	background-color: #e5a722;
 }
 /*---фон текста---*/
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .main-header {
 	line-height: 30px;
 	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
 	background-color: #eeeeee;
+}
+
+.main-navigation {
+	display: flex;
+}
+
+.main-logo-header {
+	width: 160px;
+	height: 65px;
+}
+
+.main-navigation-wrapper {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.main-navigation-wrapper .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-navigation {
+	width: 500px;
+	margin: 0;
+	padding: 0;
+}
+
+.user-navigation-block {
+	width: 160px;
+	margin: 0;
+	padding: 0;
 }
 
 .site-navigation,
@@ -92,11 +129,31 @@ a {
 }
 
 .header-tittle {
+	padding-bottom: 100px;
 	background-color: #eeeeee;
 }
 
+.header-tittle h1 {
+	text-transform: none;
+	text-align: center;
+	font-size: 55px;
+}
+
+.filters {
+	width: 260px;
+	outline: 1px solid black;
+}
+
 .orders-catalog {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
 	list-style: none;
+}
+
+.order-item {
+	width: 300px;
 }
 
 .order-item h3 {
@@ -181,8 +238,36 @@ a {
 	background-color: #d5d5d5;
 }
 
+.catalog {
+	width: 760px;
+	outline: 1px solid black;
+}
+
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
 .catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 60px;
+}
+
+.catalog-item {
+	width: 360px;
+	height: 576px;
+	outline: 2px solid red;
+	margin-bottom: 73px;
+	padding-top: 40px;
+}
+
+.catalog-list-info {
+	display: none;
 }
 
 .catalog h3 {
@@ -197,6 +282,15 @@ a {
 	line-height: 18px;
 	color: #a0a0a0;
 }
+
+.pagination-list {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	outline: 1px solid black;
+}
+
 /*---footer---*/
 .main-footer h3 {
 	text-transform: uppercase;
@@ -208,8 +302,15 @@ a {
 	color: #666666;
 }
 
+.footer-social {
+	display: flex;
+
+}
+
 .main-footer .social {
 	list-style: none;
+	width: 260px;
+	padding-right: 140px;
 }
 
 .social-button {
@@ -224,6 +325,10 @@ a {
 .social-button:focus {
 	color: #e37376;
 	background-color: #d7373b;
+}
+
+.footer-greeting {
+	/*width: 560px;*/
 }
 
 .footer-greeting b {
