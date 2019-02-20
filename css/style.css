@@ -182,12 +182,6 @@ input[type="radio"].visually-hidden {
 	color: #cbcbcb;
 }
 
-.header-info {
-	margin-bottom: 80px;
-	background-color: #eeeeee;
-	padding-bottom: 50px;
-}
-
 .header-tittle {
 	padding-bottom: 100px;
 	background-color: #eeeeee;
@@ -197,6 +191,132 @@ input[type="radio"].visually-hidden {
 	text-transform: none;
 	text-align: center;
 	font-size: 55px;
+}
+
+.slider {
+	position: relative;
+	background-color: #eeeeee;
+}
+
+.slider-controls {
+	position: absolute;
+	left: 50%;
+	bottom: 104px;
+	z-index: 100;
+	width: 160px;
+	height: 18px;
+	text-align: center;
+	font-size: 0;
+	transform: translateX(-50%);
+}
+
+.slider-controls label {
+	position: relative;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	padding: 8px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider-controls label::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	height: 8px;
+	z-index: 1;
+	width: 18px;
+	height: 18px;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.slider-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.slider-item {
+	display: none;
+	padding: 78px 0 80px 0;
+}
+
+.slider-item:nth-child(1) {
+	background-image: url("../img/slide-1.png");
+	background-position: 93% 18px;
+	background-repeat: no-repeat;
+}
+
+.slider-item:nth-child(2) {
+	background-image: url("../img/slide-2.png");
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+}
+
+.slider-item:nth-child(3) {
+	background-image: url("../img/slide-3.png");
+	background-position: 100% 20px;
+	background-repeat: no-repeat;
+}
+
+#slide-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#slide-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#slide-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#slide-1:checked ~ .slider-controls .slider-controls-item-1::before,
+#slide-2:checked ~ .slider-controls .slider-controls-item-2::before,
+#slide-3:checked ~ .slider-controls .slider-controls-item-3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider-list h3 {
+	max-width: 600px;
+	margin: 0;
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	margin-bottom: 27px;
+}
+
+.slider-list p {
+	max-width: 430px;
+	margin: 0;
+	margin-bottom: 38px;
+}
+
+.slider-button {
+	padding-left: 52px;
+	padding-right: 55px;
+}
+
+.slider-button:focus {
+	padding-top: 13px;
+	border-top: 3px solid #c13135;
+}
+
+.slider-button:focus span {
+	opacity: 0.3;
 }
 
 .orders-catalog {
@@ -379,7 +499,6 @@ input[type="radio"].visually-hidden {
 .filter-button {
 	font: inherit;
 	padding: 16px 89px;
-	outline: none;
 	color: #000000;
 	background-color: #eeeeee;
 }
@@ -437,12 +556,11 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 	z-index: 1;
 }
-
+/*меняет блок внутри блока .catalog-link .container-catalog-list */
 .catalog-list-info {
-	display: block;
 	width: 240px;
 	text-align: center;
-	padding-left: 70px;
+	padding-left: 59px;
 }
 
 .catalog-list-info h3 {
@@ -462,12 +580,7 @@ input[type="radio"].visually-hidden {
 	color: #a0a0a0;
 }
 
-.catalog-list-info span {
-	padding-left: 59px;
-	padding-right: 59px;
-	margin-bottom: 30px;
-}
-
+/*меняет позицию блок*/
 .catalog-link .container-catalog-list {
 	position: absolute;
 	top: 383px;
@@ -483,6 +596,17 @@ input[type="radio"].visually-hidden {
 
 .catalog-link .current-catalog-list {
 	display: block;
+}
+
+.catalog-link .current-catalog-li {
+	position: absolute;
+	top: 50px;
+	width: 360px;
+	height: 40px;
+	background-image: url("../img/browser-onn.png");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	z-index: 2;
 }
 
 .catalog-link:after {
@@ -513,22 +637,9 @@ input[type="radio"].visually-hidden {
 	display: block;
 }
 
-.catalog-link .current-catalog-item: {
-	position: absolute;
-	top: 0;
-	width: 360px;
-	height: 40px;
-	background-image: url("../img/browser-onn.png");
-	background-position: 0 0;
-	background-repeat: no-repeat;
-	z-index: 2;
-}
-
-
 .catalog-button {
 	font: inherit;
 	padding: 13px 75px;
-	outline: none;
 	color: #ffffff;
 	background-color: #fb565a;
 }
@@ -571,7 +682,6 @@ input[type="radio"].visually-hidden {
 	display: block;
 	font: inherit;
 	padding: 11px 20px;
-	outline: none;
 	color: #000000;
 	background-color: #eeeeee;
 }
@@ -656,23 +766,31 @@ input[type="radio"].visually-hidden {
 .footer-discount {
 	color: #444444;
 }
+/*модальное окно*/
+.modal {
+	position: relative;
+	width: 960px;
+	height: 590px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	box-shadow: 0 10px 50px 0 #000101;
+}
+
+.modal-rightus {
+	align-content: center;
+	color: #000000;
+	width: 780px;
+	height: 550px;
+	margin: 0 auto;
+	padding-top: 15px;
+}
 
 .modal-rightus h2{
 	font-size: 45px;
 	line-height: 45px;
 	margin: 0;
+	margin-top: 35px;
 	margin-bottom: 45px;
-}
-
-.modal {
-	color: #000000;
-	background-color: #ffffff;
-	width: 780px;
-}
-
-.modal h2 {
-	font-size: 45px;
-	line-height: 45px;
 }
 
 .login-form {
@@ -690,10 +808,11 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 15px;
 	padding-left: 18px;
 	width: 360px;
+	outline: none;
 }
 
 .login-form .modal-name {
-	margin-right: 40px;
+	margin-right: 60px;
 }
 
 .login-form label {
@@ -706,15 +825,19 @@ input[type="radio"].visually-hidden {
 
 .modal-text textarea {
 	display: block;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-bottom: 70px;
+	margin-bottom: 10px;
+	width: 760px;
+	outline: none;
+}
+
+.login-form textarea::placeholder {
 	font-size: 16px;
 	line-height: 18px;
 	color: #444444;
 	opacity: 0.5;
-	padding-top: 15px;
-	padding-left: 15px;
-	padding-bottom: 90px;
-	margin-bottom: 46px;
-	width: 760px;
 }
 
 .login-form p {
@@ -746,4 +869,20 @@ input[type="radio"].visually-hidden {
 
 .login-form input:focus {
 	border-color: #555555;
+}
+
+.login-form textarea:focus {
+	border: 2px solid #555555;
+}
+
+.modal-close {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 10px;
+	right: 10px;
+	background-image: url("../img/close-cross.svg");
+	background-position: 10% 10%;
+	background-repeat: no-repeat;
+	outline: none;
 }
