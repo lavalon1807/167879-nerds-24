@@ -771,7 +771,7 @@ input[type="radio"].visually-hidden {
 	position: fixed;
 	top: 120px;
 	left: 50%;
-	margin-left: -210px;
+	margin-left: -480px;
 	width: 960px;
 	height: 590px;
 	z-index: 6;
