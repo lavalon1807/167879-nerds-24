@@ -93,8 +93,8 @@ input[type="radio"].visually-hidden {
 	line-height: 30px;
 	font-weight: 500;
 	margin-bottom: 55px;
+	padding-top: 50px;
 	color: #000000;
-	text-transform: uppercase;
 	background-color: #eeeeee;
 }
 
@@ -110,7 +110,6 @@ input[type="radio"].visually-hidden {
 
 .main-navigation-wrapper {
 	width: 100%;
-	padding-top: 35px;
 }
 
 .main-navigation-wrapper .container {
@@ -128,7 +127,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation {
 	display: flex;
-	max-width: 200px;
+	max-width: 120px;
 	margin: 0;
 	padding: 0;
 }
@@ -152,7 +151,6 @@ input[type="radio"].visually-hidden {
 .site-navigation,
 .user-navigation {
 	list-style: none;
-	margin-bottom: 75px;
 }
 
 .site-navigation a,
@@ -188,7 +186,6 @@ input[type="radio"].visually-hidden {
 }
 
 .header-tittle h1 {
-	text-transform: none;
 	text-align: center;
 	font-size: 55px;
 }
@@ -196,6 +193,7 @@ input[type="radio"].visually-hidden {
 .slider {
 	position: relative;
 	background-color: #eeeeee;
+
 }
 
 .slider-controls {
@@ -241,12 +239,12 @@ input[type="radio"].visually-hidden {
 
 .slider-item {
 	display: none;
-	padding: 78px 0 80px 0;
+	padding: 60px 0 80px 0;
 }
 
 .slider-item:nth-child(1) {
 	background-image: url("../img/slide-1.png");
-	background-position: 93% 18px;
+	background-position: 92% 18px;
 	background-repeat: no-repeat;
 }
 
@@ -297,6 +295,7 @@ input[type="radio"].visually-hidden {
 	line-height: 55px;
 	font-weight: 500;
 	margin-bottom: 27px;
+	text-transform: none;
 }
 
 .slider-list p {
@@ -359,6 +358,39 @@ input[type="radio"].visually-hidden {
 }
 
 .base-info {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.base-info-item {
+	padding-right: 25px;
+}
+
+.base-year {
+	text-transform: uppercase;
+	line-height: 24px;
+	padding: 0;
+	margin: 0;
+	margin-left: 16px;
+	margin-bottom: 35px;
+	
+}
+
+.description {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 41px;
+	padding-bottom: 78px;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+
+}
+
+.description-list {
+	padding: 0;
+	margin: 0;
 	list-style: none;
 }
 
@@ -367,8 +399,50 @@ input[type="radio"].visually-hidden {
 	line-height: 45px;
 }
 
-.description .hyphen {
-	color: red;
+.description-info li {
+	position: relative;
+	margin-bottom: 24px;
+	padding-left: 37px;
+}
+
+.description-info li:last-child {
+	margin-bottom: 0;
+}
+
+.description-info li::before {
+	content: "";
+	position: absolute;
+	width: 26px;
+	height: 2px;
+	top: 13px;
+	left: 0;
+	background: red;
+}
+
+.description-info {
+	margin: 0;
+	padding: 0;
+	width: 660px;
+}
+
+.description-info p {
+	margin-bottom: 43px;
+}
+
+.description-info b {
+	display: block;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+.description-history {
+	margin: 0;
+	padding: 0;
+	width: 360px;
+}
+
+.description-history img {
+	margin-bottom: 36px;
 }
 
 .description .point {
@@ -383,6 +457,118 @@ input[type="radio"].visually-hidden {
 .base-list {
 	font-size: 16px;
 	line-height: 18px;
+}
+
+.teams ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	margin-bottom: 82px;
+	padding: 47px 43px 48px 31px;
+	border-bottom: 2px solid #eeeeee;
+	list-style: none;
+}
+
+.teams a {
+	opacity: 0.2;
+}
+
+.teams a:hover {
+	opacity: 1;
+}
+
+.teams a:focus {
+	opacity: 0.1;
+}
+
+.filter-item {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.range-filter {
+	width: 260px;
+	margin-top: 29px;
+}
+
+.filter-item legend {
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: 700px;
+}
+
+.range-control {
+	position: relative;
+	height: 41px;
+	margin-bottom: 15px;
+	padding-top: 39px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: #f1f1f1;
+	border-radius : 5px;
+}
+
+.range-control .scale {
+	height: 2px;
+	background-color: #d7dcde;
+}
+
+.range-control .bar {
+	width: 70%;
+	height: 2px;
+	background-color: #00ca74;
+}
+
+.range-control .toggle {
+	position: absolute;
+	top: 31px;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	cursor: pointer;
+}
+
+.range-control .toggle-min {
+	left: 18px;
+}
+
+.range-control .toggle-max {
+	left: 160px;
+}
+
+.price-control {
+	font-size: 0;
+}
+
+.price-control label {
+	display: inline-block;
+	width: 50%;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.price-control input {
+	width: 60px;
+	padding: 8px 10px;
+	margin-left: 10px;
+	font-family: Roboto, Arial, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #283136;
+	border: none;
+	border-radius: 5px;
+	background-color: #f1f1f1;
+}
+
+.max-price {
+	text-align: center;
 }
 
 .filters {
@@ -518,6 +704,7 @@ input[type="radio"].visually-hidden {
 
 .catalog {
 	width: 760px;
+	margin-top: 80px;
 }
 
 .catalog-columns {
@@ -542,6 +729,15 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 33px;
 	width: 360px;
 	height: 576px;
+}
+
+.catalog ul {
+	list-style: none;
+}
+
+.catalog-filter li {
+	margin-right: 20px;
+	text-align: right;
 }
 
 .catalog-item .current-catalog-link:before {
@@ -706,14 +902,56 @@ input[type="radio"].visually-hidden {
 
 
 /*---footer---*/
+.main-footer {
+	position: relative;
+	margin-bottom: 70px;
+}
+
+.main-footer .map {
+	background-image: url("../img/map.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	width: 1368px;
+	height: 416px;
+	margin: 0 auto;
+}
+
+.main-footer .map-slide {
+	position: absolute;
+	top: 70px;
+	right: 590px;
+}
+
 .main-footer h3 {
 	text-transform: uppercase;
+}
+
+.main-footer .map-adress-list {
+	position: absolute;
+	background-color: #ffffff;
+	width: 269px;
+	min-height: 254px;
+	top: 54px;
+	left: 370px;
+	padding-left: 50px;
+	padding-top: 54px;
 }
 
 .main-footer .modal-adres {
 	font-size: 16px;
 	line-height: 18px;
 	color: #666666;
+}
+
+.main-footer .modal-phone {
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+	padding-bottom: 36px;
+}
+
+.map-button:focus span {
+	opacity: 0.3;
 }
 
 .footer-social {
@@ -768,6 +1006,7 @@ input[type="radio"].visually-hidden {
 }
 /*модальное окно*/
 .modal {
+	display: none;
 	position: fixed;
 	top: 120px;
 	left: 50%;
