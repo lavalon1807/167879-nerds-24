@@ -7,10 +7,11 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
+	
 	<body class="inner-page">
 
 		<header class="main-header">
-			<div class="main-navigation-wrapper">
+			<div class="main-navigation-wrapper main-nav-catalog-wrapper">
 				<div class="container">
 					<nav class="main-navigation">
 						<a href="index.html" class="main-logo-header">
@@ -54,11 +55,12 @@
 										от<input name="min-price" type="text" value="0">
 									</label>
 									<label class="max-price">
-										до<input name="max-price" type="text" value="15000">
+										до<input name="max-price" type="text" value="15 000">
 									</label>
 								</div>
 							</div>
 						</fieldset>
+
 
 						<fieldset>
 							<legend>Сетка:</legend>
@@ -77,6 +79,7 @@
 								</li>
 							</ul>
 						</fieldset>
+
 						<fieldset>
 							<legend>Особенности:</legend>
 							<ul>
@@ -107,19 +110,23 @@
 				</section>
 
 				<section class="catalog">
-					<legend>Сортировать:</legend>
-					<ul class="catalog-filter">
-						<li class="sort-price"><a href="#">По цене</a></li>
-						<li class="sort-type"><a href="#">По типу</a></li>
-						<li class="sort-name"><a href="#">По названию</a></li>
-					</ul>
+					<div class="catalog-wrapper">
+						<p class="catalog-sort">Сортировать:</p>
+						<ul class="catalog-filter">
+							<li class="sort-price"><a href="#">По цене</a></li>
+							<li class="sort-type"><a href="#">По типу</a></li>
+							<li class="sort-name"><a href="#">По названию</a></li>
+							<li class="sort-up"></li>
+							<li class="sort-down"></li>
+						</ul>
+					</div>
 					<ul class="catalog-list">
 						<li class="catalog-item">
 							<div href="item.html" class="catalog-link current-catalog-link">
 								<div class="container-catalog-list current-catalog-list">
 									<div class="catalog-list-info">
 										<h3><a href="item.html">Sedona</a></h3>
-										<p>Информационный сайт для туристов</p>
+										<p>Информационный сайт<br> для туристов</p>
 										<a href="item-price.html" type="submit" class="button catalog-button">9 900 руб.</a>
 									</div>
 								</div>
@@ -145,7 +152,7 @@
 								<div class="container-catalog-list">
 									<div class="catalog-list-info">
 										<h3><a href="item.html">Barbershop</a></h3>
-										<p>Сайт салона красоты. Для мужчин, да.</p>
+										<p>Сайт салона красоты.<br> Для мужчин, да.</p>
 										<a href="item-price.html" class="button catalog-button">9 900 руб.</a>
 									</div>
 								</div>
@@ -158,7 +165,7 @@
 								<div class="container-catalog-list">
 									<div class="catalog-list-info">
 										<h3><a href="item.html">Mishka</a></h3>
-										<p>Интернет-магазин вязанных игрушек</p>
+										<p>Интернет-магазин<br> вязанных игрушек</p>
 										<a href="item-price.html" class="button catalog-button">9 900 руб.</a>
 									</div>
 								</div>
