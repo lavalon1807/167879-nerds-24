@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
-		<link rel="css/normalize.css" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -14,7 +14,7 @@
 				<div class="container">
 					<nav class="main-navigation">
 						<a class="main-logo-header">
-							<img class="logo-picture" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип &laquoНёрдс&raquo">
+							<img class="logo-picture" src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
 						</a>
 						<ul class="site-navigation">
 							<li><a href="studio.html">Студия</a></li>
@@ -90,7 +90,7 @@
 
 				<section class="description">
 					<div class="description-info">
-						<h2>Мы &#8212 маленькая, но гордая дизайн-студия из Краснодара.</h2>
+						<h2>Мы &#8212; маленькая, но гордая дизайн-студия из Краснодара.</h2>
 						<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 						<b>Выполняем заказы на разработку:</b>
 						<ul class="description-list">
@@ -106,28 +106,22 @@
 						</p>
 						<ul class="base-info">
 							<li class="base-info-item">
-								<p>
-									<b class="point">
-										146<sup class="percent">%</sup><br>
-									</b>
-									<p class="base-list">Уровень самоотдачи</p>
-								</p>
+								<b class="point">
+									146<sup class="percent">%</sup><br>
+								</b>
+								<p class="base-list">Уровень самоотдачи</p>
 							</li>
 							<li class="base-info-item">
-								<p>
-									<b class="point">
-										100<sup class="percent">%</sup><br>
-									</b>
-									<p class="base-list">Соблюдение сроков</p>
-								</p>
+								<b class="point">
+									100<sup class="percent">%</sup><br>
+								</b>
+								<p class="base-list">Соблюдение сроков</p>
 							</li>
 							<li class="base-info-item">
-								<p>
-									<b class="point">
-										50<sup class="percent">%</sup><br>
-									</b>
-									<p class="base-list">Минимальная предоплата</p>
-								</p>
+								<b class="point">
+									50<sup class="percent">%</sup><br>
+								</b>
+								<p class="base-list">Минимальная предоплата</p>
 							</li>
 						</ul>
 					</div>
@@ -155,12 +149,12 @@
 		<footer class="main-footer">
 			
 			<section class="map">
-				<img class="map-slide" src="img/map-marker.png" width="231" height="190">
+				<img class="map-slide" src="img/map-marker.png" width="231" height="190" alt="маркировка на карту">
 				<div class="map-adress-list">
 					<h3>Nёrds design studio</h3>
 					<p class="modal-adres">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<p class="modal-phone">тел. +7 (812) 275-75-75</p>
-					<a class="button map-button" href="#"><span>Напишите нам</span></a>
+					<a class="button map-button" href="rightus.html"><span>Напишите нам</span></a>
 				</div>
 			</section>
 
@@ -219,12 +213,31 @@
 					</p>
 					<p class="modal-text">
 						<label for="text">Текст письма:</label>
-						<textarea name="coment" type="text" placeholder="В свободной форме" id="text"></textarea>
+						<textarea name="coment" placeholder="В свободной форме" id="text"></textarea>
 					</p>
 					<button class="modal-button button" type="submit">Отправить</button>
 				</form>
-				<button type="button" class="modal-close"><span class="visually-hidden">Закрыть<span></button>
+				<button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
 			</section>
 		</div>
+
+		<script>
+			var link = document.querySelector(".map-button");
+			var popup = document.querySelector(".modal");
+			var close = popup.querySelector(".modal-close");
+			var login = popup.querySelector("[name=login]");
+
+			link.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				popup.classList.add("modal-show");
+				login.focus();
+			});
+
+			close.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				popup.classList.remove("modal-show");
+			})
+		</script>
+
 	</body>
 </html>
