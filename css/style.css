@@ -134,7 +134,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation {
 	display: flex;
-	max-width: 120px;
+	max-width: 130px;
 	margin: 0;
 	padding: 0;
 	padding-right: 5px;
@@ -142,13 +142,13 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .basket {
 	position: relative;
-	padding-left: 51px;
+	padding-left: 61px;
 }
 
 .user-navigation .basket::before {
 	content: "";
 	position: absolute;
-	left: 10px;
+	left: 20px;
 	top: 32px;
 	width: 15px;
 	height: 16px;
@@ -166,7 +166,7 @@ input[type="radio"].visually-hidden {
 	display: block;
 	padding-top: 24px;
 	margin-bottom: 10px;
-	padding-right: 25px;
+	margin-right: 23px;
 	padding-left: 22px;
 	color: #000000;
 }
@@ -869,18 +869,6 @@ input[type="radio"].visually-hidden {
 	text-transform: uppercase;
 }
 
-.catalog-item .current-catalog-link::before {
-	content: "";
-	position: absolute;
-	display: block;
-	top: 0;
-	width: 360px;
-	height: 40px;
-	background-image: url("../img/browser.svg");
-	background-position: 0 0;
-	background-repeat: no-repeat;
-	z-index: 1;
-}
 /*меняет блок внутри блока .catalog-link .container-catalog-list */
 .catalog-list-info {
 	width: 240px;
@@ -892,17 +880,21 @@ input[type="radio"].visually-hidden {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: bold;
-	margin-top: 29px;
+	margin-top: 28px;
 	text-transform: uppercase;
 	color: #000000;
 }
 
 .catalog-list-info p {
-	margin-top: 15px;
 	margin-bottom: 23px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #a0a0a0;
+}
+
+.catalog-list-info .shirt {
+	width: 195px;
+	padding-left: 23px;
 }
 
 /*меняет позицию блок*/
@@ -917,21 +909,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-link:hover .container-catalog-list {
 	display: block;
-}
-
-.catalog-link .current-catalog-list {
-	display: block;
-}
-
-.catalog-link .current-catalog-li {
-	position: absolute;
-	top: 50px;
-	width: 360px;
-	height: 40px;
-	background-image: url("../img/browser.svg");
-	background-position: 0 0;
-	background-repeat: no-repeat;
-	z-index: 2;
 }
 
 .catalog-link::after {
@@ -1037,26 +1014,34 @@ input[type="radio"].visually-hidden {
 
 /*---footer---*/
 .main-footer {
-	position: relative;
 	margin-bottom: 70px;
 }
 
-.main-footer .map {
+.main-footer .map-info {
+	position: relative;
+	padding-top: 54px;
+	padding-bottom: 54px;
+	
+	width: 1160px;
+	height: 308px;
+	/*background-color: grey;*/
+}
+.main-footer .footer-map {
 	background-image: url("../img/map.jpg");
 	background-position: 0 0;
+	background-size: cover;
 	background-repeat: no-repeat;
-	width: 1440px;
-	height: 416px;
-	margin: 0 auto;
 }
 
 .main-footer .map-slide {
+	padding-top: 55px;
 	position: absolute;
-	top: 87px;
-	right: 620px;
+	top: 35px;
+	right: 250px;
 }
 
-.main-footer h3 {
+.main-footer h4 {
+	font-size: 18px;
 	text-transform: uppercase;
 	margin: 0;
 	padding: 0;
@@ -1065,15 +1050,13 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer .map-adress-list {
+
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 400;
-	position: absolute;
 	background-color: #ffffff;
 	width: 267px;
 	min-height: 277px;
-	top: 54px;
-	left: 373px;
 	padding-left: 50px;
 	padding-top: 30px;
 }
@@ -1112,9 +1095,10 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	list-style: none;
 	margin-left: 0;
-	margin-top: 67px;
+	margin-top: 68px;
 	margin-right: 140px;
 	padding: 0;
+	margin-bottom: 0;
 }
 
 .social-button {
