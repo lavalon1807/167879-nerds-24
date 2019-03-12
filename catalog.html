@@ -20,7 +20,7 @@
 						<ul class="site-navigation">
 							<li><a href="studio.html">Студия</a></li>
 							<li><a href="clients.html">Клиенты</a></li>
-							<li class="catalog-navigation"><a>Магазин</a></li>
+							<li class="catalog-navigation">Магазин</li>
 							<li><a href="contacts.html">Контакты</a></li>
 						</ul>
 					</nav>
@@ -39,6 +39,7 @@
 		<main class="container">
 			<div class="catalog-columns">
 				<section class="filters">
+					<h2 class="visually-hidden">Фильтрация товара</h2>
 					<form class="form-filter">
 						<fieldset>
 							<legend>Стоимость:</legend>
@@ -47,8 +48,8 @@
 									<div class="scale">
 										<div class="bar"></div>
 									</div>
-									<div class="toggle toggle-min"></div>
-									<div class="toggle toggle-max"></div>
+									<button class="toggle toggle-min" name="min" value="минимальная стоимость"></button>
+									<button class="toggle toggle-max" name="max" value="максимальная стоимость"></button>
 								</div>
 								<div class="price-control">
 									<label class="min-price">
@@ -211,19 +212,23 @@
 		</main>
 
 		<footer class="main-footer">
-			
-			<section class="map">
-				<img class="map-slide" src="img/map-marker.png" width="231" height="190" alt="Маркировка на карту">
-				<div class="map-adress-list">
-					<h3>Nёrds design studio</h3>
-					<p class="modal-adres">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-					<p class="modal-phone">тел. +7(812)275-75-75</p>
-					<a class="button map-button" href="rightus.html"><span>Напишите нам</span></a>
+			<div class="footer-map">
+				<div class="container">
+					<section class="map-info">					
+						<img class="map-slide" src="img/map-marker.png" width="231" height="190" alt="маркировка на карту">
+						<div class="map-adress-list">
+							<h4>Nёrds design studio</h4>
+							<p class="modal-adres">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+							<p class="modal-phone">тел. +7 (812) 275-75-75</p>
+							<a class="button map-button" href="rightus.html"><span>Напишите нам</span></a>
+						</div>
+					</section>
 				</div>
-			</section>
+			</div>
 
-			<div class="container">
-				<section class="footer-friends">
+			<section class="footer-friends">
+				<h2 class="visually-hidden">Социальные сайты</h2>
+				<div class="container">
 					<div class="footer-social">
 						<ul class="social">
 							<li>
@@ -259,8 +264,33 @@
 							<p class="footer-discount"> Скидка 10% для друзей из социальных сетей.</p>
 						</div>
 					</div>
-				</section>
-			</div>
+				</div>
+			</section>
 		</footer>
+
+		<div class="container modal">
+			<section class="modal-rightus">
+				<h2>Напишите нам</h2>
+				<form class="login-form" action="http://echo.htmlacademy.ru" method="post">
+					<p class="modal-name">	
+						<label for="name">Ваше имя:</label>
+						<input type="text" name="login" placeholder="Имя Фамилия" id="name">
+					</p>
+					<p class="modal-mail">
+						<label for="e-mail">Ваш e-mail:</label>
+						<input type="text" name="email" placeholder="email@example.com" id="e-mail">
+					</p>
+					<p class="modal-text">
+						<label for="text">Текст письма:</label>
+						<textarea name="coment" placeholder="В свободной форме" id="text"></textarea>
+					</p>
+					<button class="modal-button button" type="submit">Отправить</button>
+				</form>
+				<button type="button" class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+			</section>
+		</div>
+
+		<script src="js/popap.js"></script>
+
 	</body>
 </html>

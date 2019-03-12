@@ -100,7 +100,7 @@
 						</ul>
 					</div>
 					<div class="description-history">
-						<img src="img/nerds-illustration.png" width="360" height="208" alt="logo-illustration">
+						<img src="img/nerds-illustration.png" width="355" height="208" alt="logo-illustration">
 						<p class="base-year">
 							<b>С 2004 года любим точность во всем:</b>
 						</p>
@@ -128,6 +128,7 @@
 				</section>
 
 				<section class="teams">
+					<h2 class="visually-hidden">Команда клиентов</h2>
 					<ul class="teams-list">
 						<li class="logo-htmlacademy">
 							<a href="#"><img src="img/logo-1-s.png" width="199" height="68" alt="htmlacademy"></a>
@@ -162,6 +163,7 @@
 			</div>
 
 			<section class="footer-friends">
+				<h2 class="visually-hidden">Социальные сайты</h2>
 				<div class="container">
 					<div class="footer-social">
 						<ul class="social">
@@ -224,23 +226,7 @@
 			</section>
 		</div>
 
-		<script>
-			var link = document.querySelector(".map-button");
-			var popup = document.querySelector(".modal");
-			var close = popup.querySelector(".modal-close");
-			var login = popup.querySelector("[name=login]");
-
-			link.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				popup.classList.add("modal-show");
-				login.focus();
-			});
-
-			close.addEventListener("click", function (evt) {
-				evt.preventDefault();
-				popup.classList.remove("modal-show");
-			})
-		</script>
+		<script src="js/popap.js"></script>
 
 	</body>
 </html>
