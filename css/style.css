@@ -90,6 +90,7 @@ input[type="radio"].visually-hidden {
 
 .button-present {
 	background-color: #efc84a;
+	margin-bottom: 80px;
 }
 
 .button-present:hover,
@@ -112,7 +113,7 @@ input[type="radio"].visually-hidden {
 .main-header {
 	line-height: 30px;
 	font-weight: 500;
-	margin-bottom: 55px;
+	margin-bottom: 80px;
 	padding-top: 51px;
 	color: #000000;
 	background-color: #eeeeee;
@@ -393,29 +394,32 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	margin-top: 79px;
-	margin-bottom: 82px;
-}
-
-.orders-catalog img{
-	margin-bottom: 18px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .order-item {
 	width: 360px;
 }
 
-.order-item-1 {
+.order-item-1::before {
+	content: "";
+	display: table;
+	clear: both;
+	width: 300px;
+	height: 145px;
 	background-image: url("../img/illustration-1.jpg");
 	background-size: 300px 145px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	width: 300px;
-	height: 145px;
+	
 	margin-bottom: 25px;
 }
 
-.order-item-2 {
+.order-item-2::before {
+	content: "";
+	display: table;
+	clear: both;
 	background-image: url("../img/illustration-2.jpg");
 	background-size: 300px 145px;
 	background-repeat: no-repeat;
@@ -425,7 +429,10 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 25px;
 }
 
-.order-item-3 {
+.order-item-3::before {
+	content: "";
+	display: table;
+	clear: both;
 	background-image: url("../img/illustration-3.jpg");
 	background-size: 300px 145px;
 	background-repeat: no-repeat;
@@ -773,12 +780,10 @@ input[type="radio"].visually-hidden {
 	        user-select: none;
 }
 
-.filter-option.input-disabled {
-	opacity: 0.1;
-}
-
-.input-disabled label{
-	cursor: default;
+.filter-input-checkbox:disabled + label,
+.filter-input-radio:disabled + label {
+	opacity: 0.2;
+	pointer-events: none;
 }
 
 .filter-input-checkbox + label::before {
@@ -931,11 +936,15 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-up {
-	margin-left: -10px;
+	/*margin-left: -10px;*/
+}
+
+.sort-name {
+	margin-right: 12px;
 }
 
 .sort-price {
-	margin-left: 5px;
+	margin-left: 8px;
 }
 
 .catalog-filter a {
@@ -948,6 +957,12 @@ input[type="radio"].visually-hidden {
 .catalog-filter a:hover,
 .catalog-filter a:focus {
 	opacity: 0.6;
+}
+
+a.sort-item-down,
+a.sort-item-down:focus,
+a.sort-item-down:hover {
+	opacity: 1;
 }
 
 .catalog-filter a:active {

@@ -5,7 +5,7 @@
 		<title>HTML Academy: Нёрдс</title>
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-		<link rel="stylesheet" href="css/ministyle.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	
 	<body class="inner-page">
@@ -75,7 +75,7 @@
 									<label for="input-fix">Фиксированная</label>
 								</li>
 								<li class="filter-option">
-									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="input-sketch">
+									<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="input-sketch" disabled>
 									<label for="input-sketch">Резиновая</label>
 								</li>
 							</ul>
@@ -97,11 +97,11 @@
 									<label for="input-news">Новости</label>
 								</li>
 								<li class="filter-option">
-									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="input-gallery">
+									<input class="visually-hidden filter-input filter-input-checkbox input-disabled" type="checkbox" name="gallery" id="input-gallery">
 									<label for="input-gallery">Галерея</label>
 								</li>
 								<li class="filter-option">
-									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="buk" id="input-buk">
+									<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="buk" id="input-buk" disabled>
 									<label for="input-buk">Корзина</label>
 								</li>
 							</ul>
@@ -117,8 +117,16 @@
 							<li class="sort-price">По цене</li>
 							<li class="sort-type"><a href="#">По типу</a></li>
 							<li class="sort-name"><a href="#">По названию</a></li>
-							<li class="sort-item-down"><img src="img/icon-up-dir.svg" class="sort-down" alt="фильтр назад"></li>
-							<li><a href="#" class="sort-up"><img src="img/icon-up-dir.svg" alt="фильтр вперед"></a></li>
+							<li>
+								<a href="#" class="sort-item-down disabled">
+									<img src="img/icon-up-dir.svg" width="11" height="10" class="sort-down" alt="фильтр назад">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="sort-up">
+									<img src="img/icon-up-dir.svg" width="11" height="10" alt="фильтр вперед">
+								</a>
+							</li>
 						</ul>
 					</div>
 					<ul class="catalog-list">
