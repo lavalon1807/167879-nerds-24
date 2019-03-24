@@ -113,7 +113,7 @@ input[type="radio"].visually-hidden {
 .main-header {
 	line-height: 30px;
 	font-weight: 500;
-	margin-bottom: 80px;
+	margin-bottom: 55px;
 	padding-top: 51px;
 	color: #000000;
 	background-color: #eeeeee;
@@ -363,7 +363,7 @@ input[type="radio"].visually-hidden {
 	color: #283136;
 	max-width: 430px;
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 41px;
 }
 
 .slider-button {
@@ -394,8 +394,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 81px;
 }
 
 .order-item {
@@ -478,7 +477,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	margin: 0;
 	margin-left: 20px;
-	margin-bottom: 39px;
+	margin-bottom: 44px;
 	
 }
 
@@ -508,7 +507,7 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	padding-top: 35px;
-	padding-bottom: 13px;
+	padding-bottom: 17px;
 }
 
 .description-info li {
@@ -544,7 +543,7 @@ input[type="radio"].visually-hidden {
 .description-info b {
 	display: block;
 	text-transform: uppercase;
-	margin-bottom: 22px;
+	margin-bottom: 25px;
 }
 
 .description-history {
@@ -1203,7 +1202,7 @@ a.sort-item-down:hover {
 	margin: 0;
 	padding: 0;
 	padding-top: 17px;
-	padding-bottom: 23px;
+	padding-bottom: 25px;
 }
 
 .main-footer .map-adress-list {
@@ -1215,7 +1214,7 @@ a.sort-item-down:hover {
 	font-weight: 400;
 	background-color: #ffffff;
 	width: 267px;
-	margin-top: 56px;
+	margin-top: 53px;
 	min-height: 277px;
 	padding-left: 50px;
 	padding-top: 30px;
